@@ -1,24 +1,13 @@
-import MainPage from './pages/main-page/main-page.component';
+import { Routes, Route } from 'react-router-dom';
+
+import Home from './routes/home/home.component';
 
 const App = () => {
-  // Dummy book data
-  const books = [
-    {
-      id: 1,
-      title: 'The Great Gatsby',
-      author: 'F. Scott Fitzgerald',
-      rating: '⭐⭐⭐⭐',
-    },
-    { id: 2, title: '1984', author: 'George Orwell', rating: '⭐⭐⭐⭐⭐' },
-    {
-      id: 3,
-      title: 'To Kill a Mockingbird',
-      author: 'Harper Lee',
-      rating: '⭐⭐⭐⭐',
-    },
-  ];
-
-  return <MainPage books={books} />;
+  return (
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>
+  );
 };
 
 export default App;

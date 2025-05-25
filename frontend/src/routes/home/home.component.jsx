@@ -4,9 +4,25 @@ import BookShelf from '../../components/book-shelf/book-shelf.component';
 import ActionBar from '../../components/action-bar/action-bar.component';
 import Footer from '../../components/footer/footer.component';
 
-import './main-page.styles.scss';
+import './home.styles.scss';
 
-const MainPage = ({ books }) => {
+const Home = () => {
+  const books = [
+    {
+      id: 1,
+      title: 'The Great Gatsby',
+      author: 'F. Scott Fitzgerald',
+      rating: '⭐⭐⭐⭐',
+    },
+    { id: 2, title: '1984', author: 'George Orwell', rating: '⭐⭐⭐⭐⭐' },
+    {
+      id: 3,
+      title: 'To Kill a Mockingbird',
+      author: 'Harper Lee',
+      rating: '⭐⭐⭐⭐',
+    },
+  ];
+
   return (
     <div className='main-page'>
       <Header />
@@ -22,4 +38,4 @@ const MainPage = ({ books }) => {
   );
 };
 
-export default MainPage;
+export default Home;
