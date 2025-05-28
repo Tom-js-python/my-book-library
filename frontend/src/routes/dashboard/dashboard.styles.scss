@@ -1,0 +1,12 @@
+@use '../../variables';
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  .content {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
