@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { ReactComponent as CrownLogo } from '../../assets/crown.svg';
+import { ReactComponent as BookLogo } from '../../assets/BookLogo.svg';
 
 import './navbar.styles.scss';
 
@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className='nav-bar'>
       <Link className='logo-container' to='/dashboard'>
-        <CrownLogo className='logo' />
+        <BookLogo className='logo' />
       </Link>
       <div className='nav-links-container'>
         <Link className='nav-link' to='/dashboard'>

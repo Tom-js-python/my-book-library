@@ -5,12 +5,20 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
+
+  .logo {
+    transform: scale(0.6);
+  }
 
   .logo-container {
     height: 100%;
     width: 70px;
-    padding: 25px;
+    margin-top: 2px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-links-container {
