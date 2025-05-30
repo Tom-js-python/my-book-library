@@ -1,14 +1,85 @@
 @use '../../variables';
 
-.main-page {
+.books-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    &__add-button {
+      background-color: #8b5e3c;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #714b30;
+      }
+    }
+  }
+
+  &__filters {
+    margin-bottom: 1.5rem;
+
+    input {
+      padding: 0.5rem;
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+}
+
+.book-card {
+  background-color: #fdfaf5;
+  border: 1px solid #d1bfa5;
+  border-radius: 8px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
-  .content {
-    flex: 1;
-    padding: 2rem 1rem;
-    max-width: 1000px;
-    margin: 0 auto;
+  &__info {
+    h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0.25rem 0;
+      font-size: 0.95rem;
+    }
+  }
+
+  &__view-btn {
+    align-self: flex-end;
+    margin-top: 1rem;
+    background-color: #8b5e3c;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    text-decoration: none;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #714b30;
+    }
   }
 }

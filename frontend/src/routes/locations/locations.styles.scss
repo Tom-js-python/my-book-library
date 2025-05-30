@@ -1,14 +1,68 @@
 @use '../../variables';
 
-.main-page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.locations-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
 
-  .content {
-    flex: 1;
-    padding: 2rem 1rem;
-    max-width: 1000px;
-    margin: 0 auto;
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .location-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+
+    input {
+      flex-grow: 1;
+      padding: 0.6rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 0.6rem 1.2rem;
+      background-color: #8b5e3c;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #714b30;
+      }
+    }
+  }
+
+  .location-list {
+    list-style: none;
+    padding: 0;
+
+    .location-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8f5f0;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+
+      button {
+        background: none;
+        border: none;
+        font-size: 1.1rem;
+        cursor: pointer;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
   }
 }
