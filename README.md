@@ -12,8 +12,11 @@ This is a work-in-progress project designed for readers who want a simple, elega
 
 - Sort and filter by author, genre, and status (read/reading/to-read).
 - Store personal notes, reviews, and quotes.
+- Track book format (physical, digital) and exact physical location.
 - Clean and customizable UI using Sass.
 - Private by default — no account required.
+- Foster community through shared goals, book discussions, and reading activity.
+- Balance **privacy** and **sharing** through user-controlled visibility options.
 
 ---
 
@@ -26,7 +29,7 @@ This is a work-in-progress project designed for readers who want a simple, elega
 
   - Support for both **physical** and **digital** books
   - Custom location hierarchy: e.g., `Dining Room → Bookcase 1 → Shelf 3`
-  - Track special cases: "Lent to **_", "Borrowed from _**"
+  - Track special cases: "Lent to **_someone_**", "Borrowed from **_someone_**"
 
 - 📚 **Book Metadata Fields**
 
@@ -41,16 +44,40 @@ This is a work-in-progress project designed for readers who want a simple, elega
 - ⚡ **Fast Entry Workflow**  
   Once a book is saved, the form resets for quick entry of the next book.
 
-- 🔐 **User Accounts (Planned)**  
-  Users can create accounts and access their collection across devices.
+---
 
-- 🔄 **Sorting & Filtering (Planned)**  
-  Filter and sort books by:
-  - Reading Status
-  - Format (Physical/Digital)
-  - Genre
-  - Location
-  - Rating
+## 🤝 Social Features _(Planned)_
+
+Build community and connection around shared reading interests.
+
+- 📖 **Borrowing & Lending**
+
+  - Mark books as **lent to** or **borrowed from** others
+  - Link to another app user or manually enter a contact
+  - Track which books are currently out or on loan
+
+- 🥅 **Reading Goals**
+
+  - Set reading goals (e.g., _10 books this year_, or _Finish "War and Peace" by December_)
+  - Choose from **3 privacy levels**:
+    - **Private**: only you can see your goals
+    - **Friends-only**: share progress with accepted friends
+    - **Public**: visible to all users of the system
+
+- 🧑‍🤝‍🧑 **Friends & Activity**
+
+  - Add and manage friends
+  - View friends’ currently reading lists and shared goals
+  - Send or accept friend requests
+
+- ✍️ **Shared Reviews & Notes**
+
+  - Upload public or friends-only reviews of books
+  - Share notes or quotes with friends or the wider community
+
+- 🔎 **Find Fellow Readers**
+  - Search for users currently reading the same book
+  - Suggest a **book club meeting** or discussion
 
 ---
 
@@ -87,6 +114,10 @@ Book data is not highly sensitive, but privacy still matters. A future privacy p
 - [ ] Sorting & Filtering UI
 - [ ] User Authentication (Backend)
 - [ ] PostgreSQL Integration
+- [ ] Borrowing/Lending System
+- [ ] Reading Goals + Privacy Settings
+- [ ] Friends List and Book Clubs
+- [ ] Shared Reviews + Discussion Area
 
 ---
 
@@ -99,5 +130,3 @@ Book data is not highly sensitive, but privacy still matters. A future privacy p
 ## 📄 License
 
 This project is open source under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). You are free to use, modify, and distribute it under the terms of the license.
-
----
